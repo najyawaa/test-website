@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เขียวสบาย — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Chonburi&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar__inner">
+
+    <!-- โลโก้ -->
+    <a href="#" class="brand">
+      <svg class="brand__leaf" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 4C11 8 6 16 8 26c1.5 7 8 10 14 8-2-8-1-15 4-21 3.5-4.5 3-9 3-9-4 0-7 1-9-1z" fill="var(--moss)"/>
+        <path d="M9 27C15 23 18 17 20 9" stroke="var(--forest)" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="brand__name">เขียวสบาย</span>
+    </a>
+
+    <!-- ปุ่มเมนูมือถือ -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+    <label for="menu-toggle" class="hamburger" aria-label="เปิดเมนู">
+      <span></span><span></span><span></span>
+    </label>
+
+    <!-- เมนูหลัก -->
+    <nav class="menu" aria-label="เมนูหลัก">
+      <a href="#" class="menu__link">หน้าแรก</a>
+      <a href="#" class="menu__link">เกี่ยวกับเรา</a>
+      <a href="#" class="menu__link">บริการ</a>
+      <a href="#" class="menu__link">บทความ</a>
+    </nav>
+
+    <!-- ไอคอนติดต่อ -->
+    <a href="#contact" class="contact-btn" aria-label="ติดต่อเรา">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M4.5 6.5 12 13l7.5-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>ติดต่อ</span>
+    </a>
+
+  </div>
+</header>
+
+<!-- ============ MAIN — แบ่งเป็นสองฝั่ง: รายละเอียด / รูปโปรไฟล์ ============ -->
+<main class="profile">
+
+  <svg class="profile__bg-leaf" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+    <path d="M300 40C180 90 90 190 110 340c15 110 120 160 220 130-30-130-10-240 70-330 55-70 50-140 50-140-70 0-120 20-150-0Z" fill="var(--sage)"/>
+  </svg>
+
+  <!-- ฝั่งซ้าย: รายละเอียด -->
+  <div class="detail">
+    <p class="eyebrow">นักออกแบบสวน &amp; สไตลิสต์ต้นไม้</p>
+    <h1>Najyawa</h1>
+    <p class="detail__tagline">เรื่องราวของต้นไม้ ดิน และแสงแดด</p>
+    <p class="detail__bio">
+      รับออกแบบและจัดสวนขนาดเล็กสำหรับบ้านและคาเฟ่ เน้นพืชพื้นถิ่นที่ดูแลง่าย
+      และพื้นที่สีเขียวที่ใช้งานได้จริงในชีวิตประจำวัน ทุกโปรเจกต์เริ่มจากการฟัง
+      ก่อนลงมือออกแบบเสมอ
+    </p>
+
+    <ul class="detail__facts">
+      <li><strong>6+</strong><span>ปีในวงการจัดสวน</span></li>
+      <li><strong>80+</strong><span>โปรเจกต์ที่ส่งมอบแล้ว</span></li>
+      <li><strong>กทม.</strong><span>และปริมณฑล</span></li>
+    </ul>
+
+    <div class="detail__cta">
+      <a href="#work" class="btn btn--primary">ดูผลงาน</a>
+      <a href="#contact" class="btn btn--ghost">ติดต่อ</a>
+    </div>
+  </div>
+
+  <!-- ฝั่งขวา: รูปโปรไฟล์ -->
+  <div class="image_profile">
+    <div class="leaf-frame">
+      <img src="./assets/24333.jpg" alt="ภาพโปรไฟล์ของ Najyawa ท่ามกลางต้นไม้" height="755" width="1200">
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 เขียวสบาย — Najyawa Garden Design</p>
+</footer>
+
+</body>
+</html>
