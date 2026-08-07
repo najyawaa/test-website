@@ -3,93 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>เขียวสบาย — Portfolio</title>
+<title>สมุดพกดิจิทัล | GPA Calculator</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Chonburi&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="light">
 
-<header class="navbar">
-  <div class="navbar__inner">
+<div class="bg-decor" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="ruled-lines"></div>
+</div>
 
-    <!-- โลโก้ -->
-    <a href="#" class="brand">
-      <svg class="brand__leaf" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M20 4C11 8 6 16 8 26c1.5 7 8 10 14 8-2-8-1-15 4-21 3.5-4.5 3-9 3-9-4 0-7 1-9-1z" fill="var(--moss)"/>
-        <path d="M9 27C15 23 18 17 20 9" stroke="var(--forest)" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      <span class="brand__name">เขียวสบาย</span>
-    </a>
+<button id="themeToggle" class="theme-toggle" type="button" aria-label="สลับโหมดกลางวัน/กลางคืน">
+  <svg class="icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+  <svg class="icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+</button>
 
-    <!-- ปุ่มเมนูมือถือ -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
-    <label for="menu-toggle" class="hamburger" aria-label="เปิดเมนู">
-      <span></span><span></span><span></span>
-    </label>
+<main class="page">
 
-    <!-- เมนูหลัก -->
-    <nav class="menu" aria-label="เมนูหลัก">
-      <a href="#" class="menu__link">หน้าแรก</a>
-      <a href="#" class="menu__link">เกี่ยวกับเรา</a>
-      <a href="#" class="menu__link">บริการ</a>
-      <a href="#" class="menu__link">บทความ</a>
-    </nav>
-
-    <!-- ไอคอนติดต่อ -->
-    <a href="#contact" class="contact-btn" aria-label="ติดต่อเรา">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-        <path d="M4.5 6.5 12 13l7.5-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>ติดต่อ</span>
-    </a>
-
-  </div>
-</header>
-
-<!-- ============ MAIN — แบ่งเป็นสองฝั่ง: รายละเอียด / รูปโปรไฟล์ ============ -->
-<main class="profile">
-
-  <svg class="profile__bg-leaf" viewBox="0 0 600 600" fill="none" aria-hidden="true">
-    <path d="M300 40C180 90 90 190 110 340c15 110 120 160 220 130-30-130-10-240 70-330 55-70 50-140 50-140-70 0-120 20-150-0Z" fill="var(--sage)"/>
-  </svg>
-
-  <!-- ฝั่งซ้าย: รายละเอียด -->
-  <div class="detail">
-    <p class="eyebrow">นักออกแบบสวน &amp; สไตลิสต์ต้นไม้</p>
-    <h1>Najyawa</h1>
-    <p class="detail__tagline">เรื่องราวของต้นไม้ ดิน และแสงแดด</p>
-    <p class="detail__bio">
-      รับออกแบบและจัดสวนขนาดเล็กสำหรับบ้านและคาเฟ่ เน้นพืชพื้นถิ่นที่ดูแลง่าย
-      และพื้นที่สีเขียวที่ใช้งานได้จริงในชีวิตประจำวัน ทุกโปรเจกต์เริ่มจากการฟัง
-      ก่อนลงมือออกแบบเสมอ
-    </p>
-
-    <ul class="detail__facts">
-      <li><strong>6+</strong><span>ปีในวงการจัดสวน</span></li>
-      <li><strong>80+</strong><span>โปรเจกต์ที่ส่งมอบแล้ว</span></li>
-      <li><strong>กทม.</strong><span>และปริมณฑล</span></li>
-    </ul>
-
-    <div class="detail__cta">
-      <a href="#work" class="btn btn--primary">ดูผลงาน</a>
-      <a href="#contact" class="btn btn--ghost">ติดต่อ</a>
+  <header class="masthead">
+    <div class="eyebrow">
+      <span class="seal-dot"></span>
+      <span>สมุดพกดิจิทัล — คำนวณเกรดเฉลี่ยสะสม</span>
     </div>
-  </div>
+    <h1>GPA<span class="dot">.</span>Calculator</h1>
+    <p class="sub">กรอกรายวิชา หน่วยกิต และเกรดที่ได้ ระบบจะคำนวณเกรดเฉลี่ยให้ทันที</p>
+  </header>
 
-  <!-- ฝั่งขวา: รูปโปรไฟล์ -->
-  <div class="image_profile">
-    <div class="leaf-frame">
-      <img src="./assets/24333.jpg" alt="ภาพโปรไฟล์ของ Najyawa ท่ามกลางต้นไม้" height="755" width="1200">
+  <section class="hero-grid">
+
+    <div class="seal-wrap">
+      <div class="glass seal-card">
+        <div class="seal">
+          <svg class="seal-ring" viewBox="0 0 220 220">
+            <circle class="ring-track" cx="110" cy="110" r="96"/>
+            <circle id="ringProgress" class="ring-progress" cx="110" cy="110" r="96"/>
+          </svg>
+          <div class="seal-inner">
+            <span class="seal-label">GPA เฉลี่ยสะสม</span>
+            <span id="gpaValue" class="seal-value">0.00</span>
+            <span class="seal-scale">จากคะแนนเต็ม 4.00</span>
+          </div>
+          <div class="seal-ribbon-left"></div>
+          <div class="seal-ribbon-right"></div>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="glass stat-card">
+          <span class="stat-num" id="totalCredits">0</span>
+          <span class="stat-label">หน่วยกิตสะสม</span>
+        </div>
+        <div class="glass stat-card">
+          <span class="stat-num" id="totalCourses">0</span>
+          <span class="stat-label">รายวิชาทั้งหมด</span>
+        </div>
+        <div class="glass stat-card">
+          <span class="stat-num" id="totalPoints">0.00</span>
+          <span class="stat-label">ผลรวมแต้มถ่วง</span>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="glass table-card">
+      <div class="table-card-head">
+        <div>
+          <h2>รายวิชา</h2>
+          <p class="hint">เลขวิชาแรกอยู่ที่ 1 — เพิ่มได้ไม่จำกัด</p>
+        </div>
+        <div class="head-actions">
+          <button id="resetBtn" class="btn btn-ghost" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            ล้างข้อมูล
+          </button>
+          <button id="exportBtn" class="btn btn-ghost" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            บันทึกภาพ
+          </button>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="course-table" id="courseTable">
+          <thead>
+            <tr>
+              <th class="col-idx">#</th>
+              <th class="col-name">ชื่อวิชา</th>
+              <th class="col-credit">หน่วยกิต</th>
+              <th class="col-grade">เกรด</th>
+              <th class="col-points">แต้ม</th>
+              <th class="col-del"></th>
+            </tr>
+          </thead>
+          <tbody id="courseBody"><!-- rows injected by JS --></tbody>
+        </table>
+      </div>
+
+      <button id="addRowBtn" class="btn btn-add" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>
+        เพิ่มรายวิชา
+      </button>
+
+      <p class="autosave-note" id="autosaveNote">ข้อมูลจะถูกบันทึกอัตโนมัติในเบราว์เซอร์นี้</p>
+    </div>
+
+  </section>
+
+  <footer class="page-footer">
+    <span>เกณฑ์เกรด: A = 4.0 · B+ = 3.5 · B = 3.0 · C+ = 2.5 · C = 2.0 · D+ = 1.5 · D = 1.0 · F = 0.0</span>
+  </footer>
 
 </main>
 
-<footer class="site-footer">
-  <p>© 2026 เขียวสบาย — Najyawa Garden Design</p>
-</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 
+<!-- html2canvas for image export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
